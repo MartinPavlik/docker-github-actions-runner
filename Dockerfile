@@ -1,5 +1,3 @@
-  GNU nano 3.2                                                                                    Dockerfile                                                                                     Modified  
-
 FROM ubuntu:16.04
 
 # Install prerequisites
@@ -22,6 +20,3 @@ RUN chown github:github /app/entrypoint.sh \
         && chmod +x /app/entrypoint.sh
 USER github
 ENTRYPOINT ["/app/entrypoint.sh"]
-
-
-
