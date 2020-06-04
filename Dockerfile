@@ -1,7 +1,10 @@
 FROM ubuntu:16.04
 
-# Install prerequisites
-RUN apt-get update && apt-get install -y curl sudo
+RUN apt-get update && apt-get install -y \
+  sudo \
+  curl \
+  openssh-client \
+  ca-certificates
 
 # Create github user and pull runner binary
 RUN useradd github \
